@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     //This method is used to add two numbers
     public void add(View view) {
-        //I used BigDecimal class to subtract two numbers because it is more accurate than double. I found info about it on https://www.geeksforgeeks.org/bigdecimal-class-java/
-        //This way we get the string, make sure that it is not empty, and convert it to double
+        //I used BigDecimal class to work with two numbers because it is more accurate than double. I found info about it on https://www.geeksforgeeks.org/bigdecimal-class-java/
+        //Here we try to add two numbers. If there is an error, we catch it and show "Error" in the resultTextView
         try {
             BigDecimal num1 = new BigDecimal(firstNumber.getText().toString());
             BigDecimal num2 = new BigDecimal(secondNumber.getText().toString());
